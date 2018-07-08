@@ -2,24 +2,18 @@ import 'package:flutter/material.dart';
 
 class DesignedTheme{
 
-  Color primaryColor;
-  Color primaryColorDark;
-  Color accentColor;
-
   static Color primaryColorStatic;
   static Color primaryColorDarkStatic;
   static Color accentColorStatic;
 
-  DesignedTheme(this.primaryColor, this.primaryColorDark, this.accentColor);
-
-  void getPrimaryColor(Color primaryColor){
-    this.primaryColor =primaryColor;
+  static void getPrimaryColor(Color primaryColor){
+    primaryColorStatic =primaryColor;
   }
-  void getPrimaryColorDark(Color primaryColorDark){
-    this.primaryColorDark = primaryColorDark;
+  static void getPrimaryColorDark(Color primaryColorDark){
+    primaryColorDarkStatic = primaryColorDark;
   }
-  void getAccentColor(Color accentColor){
-    this.accentColor = accentColor;
+  static void getAccentColor(Color accentColor){
+    accentColorStatic = accentColor;
   }
 
   static ThemeData themeSelected() {

@@ -1,50 +1,44 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dynamictheming/UI/ForTheme/options.dart';
 
 class PrimaryColorOptions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-        children: <Widget>[
-          Container(
-
-            margin: EdgeInsets.only(top: 20.0, left: 20.0),
-            child: Text(
-              'Primary Color',
-              style: TextStyle(
-                fontSize: 20.0,
+    return Container(
+      color: Colors.white,
+      child: Column(
+          children: <Widget>[
+            Container(
+              margin: EdgeInsets.all( 20.0),
+              child: Text(
+                'Primary Color',
+                style: TextStyle(
+                  fontSize: 20.0,
+                ),
               ),
             ),
-          ),
-          Row(
-            children: <Widget>[
-             _option(Colors.green),
+            Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                 Options(Colors.green, "pc"),
 
-             _option(Colors.amber),
+                 Options(Colors.purpleAccent, "pc"),
 
-             _option(Colors.red),
+                 Options(Colors.pinkAccent, "pc"),
 
-             _option(Colors.deepPurple),
+                 Options(Colors.green[900], "pc"),
 
-              _option(Colors.pinkAccent)
-            ],
-          ),
-        ]
+                 Options(Colors.amberAccent[700], "pc"),
+
+                 Options(Colors.redAccent[700], "pc"),
+
+                 Options(Colors.deepPurpleAccent[700], "pc"),
+
+                 Options(Colors.pinkAccent[700], "pc")
+                ],
+              ),
+          ]
+      ),
     );
   }
-}
-
-Widget _option(Color color){
-  return Padding(
-    padding: const EdgeInsets.all(10.0),
-    child: IconButton(
-      icon: Icon(
-        Icons.add_circle,
-        color: color,
-        size: 40.0,
-      ),
-      onPressed: (){
-
-      },
-    ),
-  );
 }
