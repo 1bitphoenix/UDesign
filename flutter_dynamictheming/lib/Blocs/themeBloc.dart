@@ -8,5 +8,4 @@ class ThemeBloc{
 
     get changeTheme => _themeController.sink;
     get selectedTheme => _themeController.stream;
-
 }

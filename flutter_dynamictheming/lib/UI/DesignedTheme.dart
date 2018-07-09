@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 
 class DesignedTheme{
 
+  static String backgroundImg;
+
+  static void getBackgroundImg(String bgImg){
+    backgroundImg = bgImg;
+  }
+
   static Color primaryColorStatic;
   static Color primaryColorDarkStatic;
   static Color accentColorStatic;

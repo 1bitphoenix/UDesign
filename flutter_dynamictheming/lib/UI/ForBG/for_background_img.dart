@@ -7,24 +7,41 @@ class BackgroundImg extends StatelessWidget {
     return new Column(
       children: <Widget>[
         Container(
+          color: Colors.black38,
+          height: 60.0,
+          width: double.infinity,
           margin: EdgeInsets.all( 20.0),
-          child: Text(
-            'Choose Background',
-            style: TextStyle(
-              fontSize: 20.0,
+          child: Center(
+            child: Text(
+              'Choose Background',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.white
+              ),
             ),
           ),
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            BgChoices('assets/bgchoice1.jpg'),
-            BgChoices('assets/bgchoice2.jpg'),
-            BgChoices('assets/bgchoice3.jpg'),
-          ],
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              BgChoices('assets/bgchoice4.jpg'),
+              BgChoices('assets/bgchoice2.jpg'),
+              BgChoices('assets/bgchoice3.jpg'),
+            ],
+          ),
         ),
-        Row(
-
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              BgChoices('assets/bgchoice1.jpg'),
+              BgChoices('assets/bgchoice5.jpg'),
+              BgChoices('assets/bgchoice6.jpg'),
+            ],
+          ),
         ),
       ],
     );
