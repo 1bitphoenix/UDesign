@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Jul 09 18:57:27 IST 2018
+#Wed Jul 11 22:45:05 IST 2018
 17.baseType=DIRECTORY
 4.path=flutter_assets/assets/bgchoice5.jpg
 8.set=NATIVE_RESOURCE

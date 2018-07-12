@@ -12,6 +12,7 @@ class DisplayOption extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           Divider(),
+
           PrimaryColorOptions(),
 
           Divider(),

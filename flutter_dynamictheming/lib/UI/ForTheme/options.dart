@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dynamictheming/Blocs/blocs_class.dart';
 import 'package:flutter_dynamictheming/UI/DesignedTheme.dart';
 
 class Options extends StatelessWidget {
@@ -25,6 +26,8 @@ class Options extends StatelessWidget {
             }else {
               DesignedTheme.getAccentColor(color);
             }
+
+            Blocs.themeBloc.changeTheme.add(DesignedTheme.themeSelected());
           },
         ),
     );
